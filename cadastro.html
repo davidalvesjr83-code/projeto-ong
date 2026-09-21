@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro — Ação Solidária</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Ação Solidária</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="cadastro.html" aria-current="page">Cadastro</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Faça parte da nossa equipe</h2>
+      <p>Preencha os dados abaixo e entraremos em contato!</p>
+
+      <form id="formCadastro">
+        <div>
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone">
+        </div>
+
+        <div>
+          <label>Quer participar como:</label>
+          <input type="radio" name="tipo" value="voluntario" id="voluntario">
+          <label for="voluntario">Voluntário</label>
+          <input type="radio" name="tipo" value="doador" id="doador">
+          <label for="doador">Doador</label>
+        </div>
+
+        <button type="submit" class="botao">Enviar cadastro</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ação Solidária</p>
+  </footer>
+</body>
+</html>
